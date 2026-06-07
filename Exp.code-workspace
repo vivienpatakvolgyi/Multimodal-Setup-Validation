@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "Exp",
+			"path": "."
+		},
+		{
+			"name": "stimuli",
+			"path": "../../Downloads/stimuli"
+		}
+	],
+	"settings": {}
+}
