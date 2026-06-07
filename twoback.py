@@ -19,7 +19,7 @@ CONTINUE_KEY = "q"
 
 # Paths
 HERE = os.path.dirname(os.path.abspath(__file__))
-STIMDIR = os.path.join(HERE, "twoback", "stimuli")
+STIMDIR = os.path.join(HERE, "twoback")
 
 def ps(name: str) -> str:
     return os.path.join(STIMDIR, name)
@@ -62,7 +62,7 @@ def main():
     def pump(dt=0.01):
         core.wait(dt)
 
-    # Preload stimuli
+    # Preload 
     letter_stims = [visual.ImageStim(win, image=ps(fn)) for fn in LETTER_NAMES]
     stim_grey = visual.ImageStim(win, image=GREY_FB)
     stim_err  = visual.ImageStim(win, image=ERR_FB)
